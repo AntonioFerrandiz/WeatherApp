@@ -5,6 +5,7 @@
     --temperaturadetails: #A2DBFA;
     ---blanco: #FFFFFF;
     ---otherdetails: #353D4D;
+    --negroinput: #171717;
     /* Font/text values */
     --unnamed-font-family-segoe-ui: Segoe UI;
     --unnamed-font-style-normal: normal;
@@ -29,22 +30,23 @@
 }
 
 
-/* Character Styles */
 body{
     background-image: url('https://i.pinimg.com/originals/cb/6d/2c/cb6d2c974f71580b964c1f931e8b2aa3.jpg');
     text-align: center;
     
 }
+
 form{
     display: inline-block;
     align-content: center;
 }
+
 .inputC {
     font: normal normal 400 25px Segoe UI;
     text-align: center;
     letter-spacing: 0px;
     margin: auto;
-    color: var(--blancofondo);
+    color: var(--negroinput);
     opacity: 1;
     outline: none;
     background: transparent;
@@ -53,7 +55,8 @@ form{
     
 }
 .inputC::placeholder{
-    color: var(--blancofondo);
+    color: var(--negroinput);
+    
 }
 
 .inputC:focus {
@@ -63,7 +66,6 @@ form{
 .notfound {
     color: #FF616D;
 }
-
 
 .title-first-part {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-45)/var(--unnamed-line-spacing-60) var(--unnamed-font-family-segoe-ui);
@@ -75,6 +77,7 @@ form{
     line-height: 100%;
     margin-top: 2rem;
 }
+
 .title-second-part {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-50)/var(--unnamed-line-spacing-67) var(--unnamed-font-family-segoe-ui);
     color: var(--negroletra);
@@ -85,6 +88,7 @@ form{
     line-height: 25%;
     margin-bottom: 3rem;
 }
+
 .ubication {
     font-family: var(--unnamed-font-family-segoe-ui);
     font-style: var(--unnamed-font-style-semibold);
@@ -126,15 +130,17 @@ form{
     text-align: center;
 }
 
+
 .main-container {
     width: 450px;
     height: 650px;
     background: var(--temperaturadetails) 0% 0% no-repeat padding-box;
-    background: #A2DBFA 0% 0% no-repeat padding-box;
+    background: linear-gradient(1deg,#96baff 0%, #5089c6 80%);
     border-radius: 50px;
     opacity: 1;
     padding: 3rem;
     margin: 0 auto;
+    box-shadow: 11px 6px 20px -3px rgba(54,54,54,0.75);
 }
 
 .details{

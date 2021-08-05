@@ -21,7 +21,7 @@ async function GetWeather(city) {
         const CityAndCountry = `${name}, ${sys.country}`
         const ubication = document.getElementById("Ubicacion")
         ubication.innerHTML = CityAndCountry
-        //Clear Clouds
+
         const Temp = main.temp
         function KelvinToC(Temp) {
             return (Temp - 273.15).toFixed(0)
