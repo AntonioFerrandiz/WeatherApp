@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-
+const API_KEY = '053fad7e373bb77049e3182c72334a5a'
 function DayOfWeek() {
     day = new Date()
     number_day = day.getDay()
@@ -11,7 +11,7 @@ function DayOfWeek() {
 DayOfWeek()
 async function GetWeather(city) {
     try {
-        const { coord, weather, main, sys, name, wind } = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=` + city + `&appid=053fad7e373bb77049e3182c72334a5a`).then(response => response.json());
+        const { coord, weather, main, sys, name, wind } = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then(response => response.json());
 
         const [Weather] = weather
 
