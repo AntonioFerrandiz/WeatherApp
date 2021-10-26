@@ -1,3 +1,5 @@
+var container = document.getElementById("container");
+var footer = document.getElementById("footer");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const API_KEY = '053fad7e373bb77049e3182c72334a5a'
@@ -53,9 +55,13 @@ async function GetWeather(city) {
         latLabel.innerHTML = CityLat
         const imgLabel = document.getElementById("weathericon")
         imgLabel.src = `http://openweathermap.org/img/wn/${[Weather][0].icon}@2x.png`
+        container.removeAttribute('hidden');
+        footer.removeAttribute('hidden')
+        search.value = ''
     } catch (err) {
         const NotFound = document.getElementById("notfound")
-        NotFound.innerHTML = "City not found"
+        NotFound.innerHTML = "City not found";
+        footer.removeAttribute('hidden');
     }
 }
 form.addEventListener("submit", (e) => {

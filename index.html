@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta content "width=device-width, initial-scale=1 name=" viewport ">
-    <meta name="author" content="Antonio Ferrándiz Bendezu">
+    <meta name=" author" content="Antonio Ferrándiz Bendezu">
     <meta name="generator" content="WeatherApp">
 
     <meta name="description" content="Obtain weather from any city of the world">
     <title>WeatherApp</title>
-    
+
     <link rel=" stylesheet " href=" css/style.css ">
     <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="
         stylesheet " integrity=" sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="
@@ -27,15 +27,17 @@
             <input class="inputC " type="text" id="search" placeholder="Enter your city"><br>
             <small class="notfound" id="notfound"></small>
         </form>
-        <div class=" main-container">
+        <div class=" main-container" id="container" hidden>
             <!-- <h3 class=" ubication " id="Ubicacion"><i class="fas fa-map-marker-alt"></i> City, Country</h3> -->
             <div class="row">
                 <div class="col-sm-"><i class="fas fa-map-marker-alt ubication"></i></div>
-                <div class="col"><h3 class=" ubication " id="Ubicacion">City, Country</h3></div>
+                <div class="col">
+                    <h3 class=" ubication " id="Ubicacion"></h3>
+                </div>
             </div>
             <div class="details">
-                <h2 class=" temperature-details " id="Dia">Day</h2>
-                <h2 class=" temperature " id="Temperatura">00°C</h2>
+                <h2 class=" temperature-details " id="Dia"></h2>
+                <h2 class=" temperature " id="Temperatura"></h2>
                 <h2 class=" temperature-details " id="DetallesTemperatura"></h2>
                 <img id="weathericon">
 
@@ -45,30 +47,28 @@
                 <div class="col">WIND</div>
             </div>
             <div class="row atmospheric-title-data data-details">
-                <div class="col" id="Humedad">...</div>
-                <div class="col" id="Viento">...</div>
+                <div class="col" id="Humedad"></div>
+                <div class="col" id="Viento"></div>
             </div>
             <div class="row atmospheric-title-data">
                 <div class="col">LATITUDE</div>
                 <div class="col">LONGITUDE</div>
             </div>
             <div class="row atmospheric-title-data data-details">
-                <div class="col" id="Latitud">...</div>
-                <div class="col" id="Longitud">...</div>
+                <div class="col" id="Latitud"></div>
+                <div class="col" id="Longitud"></div>
             </div>
         </div>
 
     </div>
     <footer>
-        <div class="container network-icons">
+        <div id="footer" class="container network-icons" hidden>
             <ul>
                 <li><a href="https://github.com/AntonioFerrandiz" target="_blank" class="github"><i
                             class="fab fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/antonio-ferrandiz/" target="_blank" class="linkedin"><i
                             class="fab fa-linkedin-in"></i></a></li>
             </ul>
-
-
         </div>
     </footer>
 </body>
