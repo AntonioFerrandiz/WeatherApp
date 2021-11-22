@@ -6,151 +6,359 @@
     ---blanco: #FFFFFF;
     ---otherdetails: #353D4D;
     --negroinput: #171717;
-    /* Font/text values */
-    --unnamed-font-family-segoe-ui: Segoe UI;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-weight-400: 400px;
-    --unnamed-font-weight-600: 600px;
-    --unnamed-font-weight-normal: normal;
-    --unnamed-font-weight-semibold: semibold;
-    --unnamed-font-weight-bold: bold;
-    --unnamed-font-size-25: 20px;
-    --unnamed-font-size-25: 25px;
-    --unnamed-font-size-35: 35px;
-    --unnamed-font-size-40: 40px;
-    --unnamed-font-size-45: 45px;
-    --unnamed-font-size-50: 50px;
-    --unnamed-font-size-125: 125px;
-    --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-47: 47px;
-    --unnamed-line-spacing-53: 53px;
-    --unnamed-line-spacing-60: 60px;
-    --unnamed-line-spacing-67: 67px;
-    --unnamed-line-spacing-166: 166px;
+
 }
+
 
 
 body{
-    background-image: url('https://i.pinimg.com/originals/cb/6d/2c/cb6d2c974f71580b964c1f931e8b2aa3.jpg');
-    text-align: center;
-    
-}
+    background: url('https://wallpapercave.com/wp/wp5393061.jpg');
+    background-position: cover;
+    background-size: cover;
 
+}
 form{
     display: inline-block;
     align-content: center;
 }
-
-.inputC {
-    font: normal normal 400 25px Segoe UI;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.weather-card{
+    width: 30rem;
+    background-color: #F7F7F7;
+    border-radius: .75rem;
+    box-shadow: 10px 10px 11px -5px rgba(0,0,0,0.19);
     text-align: center;
-    letter-spacing: 0px;
-    margin: auto;
-    color: var(--negroinput);
-    opacity: 1;
+}
+.weather-form-input{
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin: 0;
     outline: none;
-    background: transparent;
-    border-width: 0 0 2px;
-    border-color: var(--negroletra); 
-    
+    border: 1.75px solid #C8C6C6;
+    background-color: #FFFFFF;
 }
-.inputC::placeholder{
-    color: var(--negroinput);
-    
+.weather-form-input:hover{
+    border: 1.85px solid #000;
+}
+.weather-form-input:active{
+    border: 1.85px solid #0F52BA;
+}
+.weather-form-input:focus{
+    border: 1.95px solid #0F52BA;
 }
 
-.inputC:focus {
-    border-color: #08203281;
-}
-
-.notfound {
+.weather-city-notfound {
     color: #FF616D;
 }
 
-.title-first-part {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-45)/var(--unnamed-line-spacing-60) var(--unnamed-font-family-segoe-ui);
-    color: var(--negroletra);
-    text-align: center;
-    font: normal normal normal 45px/60px Segoe UI;
+.weather-card-title-text{
     color: #082032;
     opacity: 1;
+    padding: 1.5rem 0;
+}
+
+.weather-card-title {
+    font-size: 4rem;
     line-height: 100%;
-    margin-top: 2rem;
 }
 
-.title-second-part {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-50)/var(--unnamed-line-spacing-67) var(--unnamed-font-family-segoe-ui);
-    color: var(--negroletra);
-    text-align: center;
-    font: normal normal 600 50px/67px Segoe UI;
-    color: #082032;
-    opacity: 1;
-    line-height: 25%;
-    margin-bottom: 3rem;
+.weather-card-subtitle {
+    font-size: 3rem;
+    line-height: 75%;
 }
 
-.ubication {
-    font-family: var(--unnamed-font-family-segoe-ui);
-    font-style: var(--unnamed-font-style-semibold);
-    font-weight: var(--unnamed-font-weight-600);
-    font-size: var(--unnamed-font-size-40);
-    line-height: var(--unnamed-line-spacing-53);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(---blanco);
-}
-
-.temperature-details {
-    font-family: var(--unnamed-font-family-segoe-ui);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-45);
-    line-height:0%;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(---blanco);
-}
-
-.temperature {
-    font-family: var(--unnamed-font-family-segoe-ui);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-125);
-    line-height:100%;
-    color: var(---blanco);
-    
-}
-
-.atmospheric-title-data {
-    font-family: var(--unnamed-font-family-segoe-ui);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: 20px;
-    line-height: var(--unnamed-line-spacing-47);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(---blanco);
-    text-align: center;
-}
-
-
-.main-container {
-    width: 450px;
-    height: 650px;
-    background: var(--temperaturadetails) 0% 0% no-repeat padding-box;
+.weather-card-content{
+    width: 100%;
     background: linear-gradient(1deg,#96baff 0%, #5089c6 80%);
-    border-radius: 50px;
-    opacity: 1;
-    padding: 3rem;
-    margin: 0 auto;
-    box-shadow: 11px 6px 20px -3px rgba(54,54,54,0.75);
+    color: #FFFFFF;
+    padding: 1rem;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    margin: 0;
+    text-align: center;
 }
 
-.details{
+.city-ubication{
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.weather-temperature-details{
     text-align: center;
     margin-top: 2rem;
 }
+.city-day{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.city-temperature{
+    font-size: 8rem;
+    line-height: 75%;
+}
+.city-weather{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
 
-.data-details{
-    line-height: 50%;
-    margin-bottom: 1rem;
+.weather-data-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.weather-data-content{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .weather-card{
+        width: 45rem;
+        margin-top: 5rem;   
+    }
+    .weather-card-title{
+        font-size: 5rem;
+    }
+    .weather-card-subtitle{
+        font-size: 4rem;
+    }
+    .weather-form-input{
+        width: 16rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .city-ubication{
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+    
+    .weather-temperature-details{
+        text-align: center;
+        margin-top: 2.75rem;
+    }
+    .city-day{
+        font-size: 4rem;
+    }
+    .city-temperature{
+        font-size: 7.5rem;
+        line-height: 75%;
+    }
+    .city-weather{
+        font-size: 4rem;
+    }
+    
+    .weather-data-title{
+        font-size: 2.35rem;
+        font-weight: 500;
+    }
+    .weather-data-content{
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        min-height: 100vh;
+    }
+    .weather-card{
+        margin: 0 1rem;
+    }
+    .weather-card-title{
+        font-size: 3.75rem;
+    }
+    .weather-card-subtitle{
+        font-size: 2.75rem;
+    }
+    .weather-form-input{
+        width: 15rem;
+        height: 2.75rem;
+    }
+    /*  */
+    .city-ubication{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .weather-temperature-details{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .city-day{
+        font-size: 3rem;
+    }
+    .city-temperature{
+        font-size: 7rem;
+        line-height: 75%;
+    }
+    .city-weather{
+        font-size: 3rem;
+    }
+    
+    .weather-data-title{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .weather-data-content{
+        font-size: 1.45rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        min-height: 100vh;
+    }
+    .weather-card{
+        margin: 0 1rem;
+    }
+    .weather-card-title{
+        font-size: 2.75rem;
+    }
+    .weather-card-subtitle{
+        font-size: 1.75rem;
+    }
+    .weather-form-input{
+        width: 12.5rem;
+        height: 2.25rem;
+    }
+
+    .city-ubication{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .weather-temperature-details{
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+    .city-day{
+        font-size: 2.5rem;
+    }
+    .city-temperature{
+        font-size: 6rem;
+        line-height: 75%;
+    }
+    .city-weather{
+        font-size: 2.5rem;
+    }
+    
+    .weather-data-title{
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+    .weather-data-content{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        min-height: 100vh;
+    }
+    .weather-card{
+        margin: 0 1rem;
+    }
+    .weather-card-title{
+        font-size: 2.5rem;
+    }
+    .weather-card-subtitle{
+        font-size: 1.5rem;
+    }
+    .weather-form-input{
+        width: 11.5rem;
+        height: 1.75rem;
+        font-size: .75rem;
+    }
+
+    .city-ubication{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    
+    .weather-temperature-details{
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+    .city-day{
+        font-size: 1.5rem;
+    }
+    .city-temperature{
+        font-size: 5.75rem;
+        line-height: 75%;
+    }
+    .city-weather{
+        font-size: 1.5rem;
+    }
+    img{
+        width: 75px;
+    }
+    .weather-data-title{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .weather-data-content{
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        min-height: 100vh;
+    }
+    .weather-card{
+        margin: 0 1rem;
+    }
+    .weather-card-title{
+        font-size: 2.25rem;
+    }
+    .weather-card-subtitle{
+        font-size: 1.25rem;
+    }
+    .weather-form-input{
+        width: 11rem;
+        height: 1.5rem;
+        font-size: .75rem;
+    }
+
+    .city-ubication{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .weather-temperature-details{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .city-day{
+        font-size: 1.25rem;
+    }
+    .city-temperature{
+        font-size: 4.75rem;
+        line-height: 75%;
+    }
+    .city-weather{
+        font-size: 1.25rem;
+    }
+    img{
+        width: 65px;
+    }
+    .weather-data-title{
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+    .weather-data-content{
+        font-size: 0.65rem;
+        font-weight: 300;
+    }
 }
 
 /* Footer */

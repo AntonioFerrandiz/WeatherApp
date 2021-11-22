@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content "width=device-width, initial-scale=1 name=" viewport ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=" author" content="Antonio Ferrándiz Bendezu">
     <meta name="generator" content="WeatherApp">
 
@@ -18,50 +18,66 @@
 
 </head>
 
-<body class="body">
-    <div class=" container">
-        <h2 class=" title-first-part ">Welcome to</h2>
-        <h2 class=" title-second-part ">WeatherApp</h2>
-
-        <form id="form" autocomplete="off">
-            <input class="inputC " type="text" id="search" placeholder="Enter your city"><br>
-            <small class="notfound" id="notfound"></small>
-        </form>
-        <div class=" main-container" id="container" hidden>
-            <!-- <h3 class=" ubication " id="Ubicacion"><i class="fas fa-map-marker-alt"></i> City, Country</h3> -->
-            <div class="row">
-                <div class="col-sm-"><i class="fas fa-map-marker-alt ubication"></i></div>
-                <div class="col">
-                    <h3 class=" ubication " id="Ubicacion"></h3>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="weather-card-title-text">
+                <div>
+                    <h2 class="weather-card-title">Welcome to</h2>
+                </div>
+                <div>
+                    <h1 class="weather-card-subtitle">WeatherApp</h1>
                 </div>
             </div>
-            <div class="details">
-                <h2 class=" temperature-details " id="Dia"></h2>
-                <h2 class=" temperature " id="Temperatura"></h2>
-                <h2 class=" temperature-details " id="DetallesTemperatura"></h2>
-                <img id="weathericon">
+            <div class="weather-form">
+                <form id="form" autocomplete="off">
+                    <input class="weather-form-input" type="text" id="search" placeholder="Enter your city"><br>
+                    <small class="weather-city-notfound" id="notfound"></small>
+                </form>
+            </div>
+
+            <div class="weather-card-content" id="container" hidden>
+
+                <div class="row justify-content-md-center city-ubication">
+                    <div class="col">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="Ubicacion"></span>
+                    </div>
+                </div>
+
+                <div class="weather-temperature-details">
+                    <h2 class="city-day" id="Dia"></h2>
+                    <h2 class="city-temperature" id="Temperatura"></h2>
+                    <h2 class="city-weather" id="DetallesTemperatura"></h2>
+                    <img id="weathericon">
+                </div>
+                <hr>
+                <div class="row mt-3 weather-data-title">
+                    <div class="col">HUMIDITY</div>
+                    <div class="col">WIND</div>
+                </div>
+
+                <div class="row weather-data-content">
+                    <div class="col" id="Humedad"></div>
+                    <div class="col" id="Viento"></div>
+                </div>
+
+                <div class="row weather-data-title">
+                    <div class="col">LATITUDE</div>
+                    <div class="col">LONGITUDE</div>
+                </div>
+
+                <div class="row weather-data-content">
+                    <div class="col" id="Latitud"></div>
+                    <div class="col" id="Longitud"></div>
+                </div>
 
             </div>
-            <div class="row mt-3 atmospheric-title-data">
-                <div class="col">HUMIDITY</div>
-                <div class="col">WIND</div>
-            </div>
-            <div class="row atmospheric-title-data data-details">
-                <div class="col" id="Humedad"></div>
-                <div class="col" id="Viento"></div>
-            </div>
-            <div class="row atmospheric-title-data">
-                <div class="col">LATITUDE</div>
-                <div class="col">LONGITUDE</div>
-            </div>
-            <div class="row atmospheric-title-data data-details">
-                <div class="col" id="Latitud"></div>
-                <div class="col" id="Longitud"></div>
-            </div>
+
         </div>
-
     </div>
-    <footer>
+
+    <!-- <footer>
         <div id="footer" class="container network-icons" hidden>
             <ul>
                 <li><a href="https://github.com/AntonioFerrandiz" target="_blank" class="github"><i
@@ -70,9 +86,7 @@
                             class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 </body>
-
 <script src="js/main.js"></script>
-
 </html>

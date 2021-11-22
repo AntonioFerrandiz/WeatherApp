@@ -56,12 +56,13 @@ async function GetWeather(city) {
         const imgLabel = document.getElementById("weathericon")
         imgLabel.src = `http://openweathermap.org/img/wn/${[Weather][0].icon}@2x.png`
         container.removeAttribute('hidden');
-        footer.removeAttribute('hidden')
+        // footer.removeAttribute('hidden')
         search.value = ''
     } catch (err) {
+        console.log(err)
         const NotFound = document.getElementById("notfound")
         NotFound.innerHTML = "City not found";
-        footer.removeAttribute('hidden');
+        // footer.removeAttribute('hidden');
     }
 }
 form.addEventListener("submit", (e) => {
