@@ -66,12 +66,12 @@ form{
 }
 
 .weather-card-title {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 100%;
 }
 
 .weather-card-subtitle {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 75%;
 }
 
@@ -123,10 +123,10 @@ form{
         margin-top: 5rem;   
     }
     .weather-card-title{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .weather-card-subtitle{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .weather-form-input{
         width: 16rem;
@@ -172,10 +172,10 @@ form{
         margin: 0 1rem;
     }
     .weather-card-title{
-        font-size: 3.75rem;
+        font-size: 2.75rem;
     }
     .weather-card-subtitle{
-        font-size: 2.75rem;
+        font-size: 3.75rem;
     }
     .weather-form-input{
         width: 15rem;
@@ -219,10 +219,10 @@ form{
         margin: 0 1rem;
     }
     .weather-card-title{
-        font-size: 2.75rem;
+        font-size: 1.75rem;
     }
     .weather-card-subtitle{
-        font-size: 1.75rem;
+        font-size: 2.75rem;
     }
     .weather-form-input{
         width: 12.5rem;
@@ -267,10 +267,10 @@ form{
         margin: 0 1rem;
     }
     .weather-card-title{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .weather-card-subtitle{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .weather-form-input{
         width: 11.5rem;
@@ -318,10 +318,10 @@ form{
         margin: 0 1rem;
     }
     .weather-card-title{
-        font-size: 2.25rem;
+        font-size: 1.25rem;
     }
     .weather-card-subtitle{
-        font-size: 1.25rem;
+        font-size: 2.25rem;
     }
     .weather-form-input{
         width: 11rem;
